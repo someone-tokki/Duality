@@ -2,6 +2,8 @@
 
 基于 Canvas 2D 的实时视觉风格迁移工具，支持图片和视频的风格化处理、多视窗对比、主体抠图等。
 
+**在线演示：** [https://someone-tokki.github.io/Duality/](https://someone-tokki.github.io/Duality/)
+
 ## 功能
 
 ### 风格化样式
