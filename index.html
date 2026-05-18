@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duality - 视觉风格迁移</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="toolbar">
+    <button id="upload-btn">📁 上传媒体</button>
+    <button id="export-btn">💾 导出当前帧</button>
+  </div>
+  <canvas id="canvas"></canvas>
+  <input type="file" id="file-input" accept="image/*,video/*" hidden />
+  <div id="hint" class="hint-visible">
+    <p>上传图片或视频以开始</p>
+    <p class="hint-sub">支持 JPG / PNG / MP4</p>
+  </div>
+  <div id="info-bar">
+    <span id="info-fps">FPS: 0</span>
+    <span id="info-char-count">字符: 0</span>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js" crossorigin="anonymous"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
