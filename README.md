@@ -61,10 +61,19 @@ npm run preview
 5. 勾选 **主体抠图** 启用自动分割，按住 Shift/Ctrl 精修蒙版
 6. 视频模式下使用 **视频控制** 面板播放/导出
 
-## 技术栈
+## 致谢
 
-- [Vite](https://vitejs.dev/) — 构建工具
-- [lil-gui](https://lil-gui.georgealways.com/) — 控制面板
-- [MediaPipe Selfie Segmentation](https://developers.google.com/mediapipe/solutions/vision/selfie_segmentation) — 主体分割
-- Canvas 2D API — 所有风格化渲染与合成
+本项目的诞生离不开以下开源项目和技术的支持，特此致谢：
+
+- [lil-gui](https://lil-gui.georgealways.com/) — 轻量级控制面板 UI（MIT License）
+- [MediaPipe Selfie Segmentation](https://developers.google.com/mediapipe/solutions/vision/selfie_segmentation) — 浏览器端实时人物分割（Apache 2.0 License）
+- [Vite](https://vitejs.dev/) — 快速构建工具（MIT License）
+- Canvas 2D API — 全部风格化渲染与合成管线
 - MediaRecorder API — 视频导出
+
+### 风格化算法参考
+
+- **有序抖动**：Bayer 4×4 有序抖动矩阵
+- **边缘检测**：Sobel 3×3 边缘检测算子
+- **ASCII 转换**：基于亮度映射的字符替换
+- **半色调**：基于亮度调制的半径映射
